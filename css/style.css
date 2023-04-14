@@ -17,6 +17,7 @@
 :root {
     /* Background Color */
     --bg-white: #fff;
+    --bg-dark-color: #03262c;
     /* Text Colors */
     --primary-text: #061738;
     --secondary-color: #60cd12;
@@ -262,7 +263,8 @@ section {
     font-size: 1.6rem;
 }
 
-.header-scrolled {
+
+/* .header-scrolled {
     position: fixed;
     top: -0.4rem;
     left: 0;
@@ -272,6 +274,19 @@ section {
     margin: auto;
     z-index: 999;
     transition: 0.3s all ease-in-out;
+} */
+
+.header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    /* box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%); */
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -313,11 +328,115 @@ section {
 
 /* 03 features css */
 
+.feature_section .features-box {
+    background-color: transparent;
+    border: 0.15rem solid var(--light-color);
+    padding: 8rem 0;
+    transition: all 0.3s;
+}
+
+.feature_section .features-icon-border {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid var(--light-color);
+    padding: 1.3rem;
+    display: inline-block;
+}
+
+.feature_section .features-box .features-icon {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: var(--light-color);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_section .features-box .features-icon img {
+    width: 3.7rem;
+}
+
+.feature_section .features-box h3 {
+    margin-top: 1.5rem;
+    color: var(--primary-text);
+}
+
+.feature_section .features-box:hover {
+    background-color: var(--bg-dark-color);
+    border-color: var(--bg-dark-color);
+}
+
+.feature_section .features-box:hover h3 {
+    color: var(--text-white);
+}
+
+.feature_section .features-box:hover .features-icon-border {
+    border-color: var(--secondary-color);
+}
+
 
 /* 04 about section */
 
+.landing_about_section {
+    background: url("../images/about/about-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20rem 0;
+}
+
+.landing_about_section p {
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+}
+
 
 /* 05 product card design */
+
+.landing_product_section .product-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0.2rem solid var(--light-color);
+    padding: 2rem 1rem;
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card .product-img {
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.landing_product_section .product-card h3 {
+    color: var(--primary-text);
+}
+
+.landing_product_section .product-card span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card .product-detail {
+    position: absolute;
+    bottom: -22rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: var(--dark-color);
+    transition: all 0.5s ease;
+}
+
+.landing_product_section .product-card:hover .product-detail {
+    bottom: 0;
+}
 
 
 /* 06 textimonial */
