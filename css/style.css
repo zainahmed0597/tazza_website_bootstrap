@@ -189,7 +189,8 @@ section {
 .about .banner_section,
 .product .banner_section,
 .gallery .banner_section,
-.contact .banner_section {
+.contact .banner_section,
+.distributors .banner_section {
     background: url('../images/banner-slide/top-banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -263,19 +264,6 @@ section {
     font-size: 1.6rem;
 }
 
-
-/* .header-scrolled {
-    position: fixed;
-    top: -0.4rem;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-    z-index: 999;
-    transition: 0.3s all ease-in-out;
-} */
-
 .header-scrolled {
     position: fixed;
     top: -0.4rem;
@@ -285,7 +273,6 @@ section {
     max-width: 1320px;
     margin: auto;
     z-index: 999;
-    /* box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%); */
     transition: 0.3s ease-in-out;
 }
 
@@ -604,4 +591,13 @@ section {
 .footer_wrapper .copyright-section a {
     color: var(--primary-text);
     font-weight: 600;
+}
+
+
+/* ===========================
+About Page CSS
+============================== */
+
+.about .about-details p {
+    color: var(--primary-text);
 }
